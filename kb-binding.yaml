@@ -1,0 +1,28 @@
+# kb-binding.yaml
+#
+# 定义 {kb} 占位符的 canonical 解析规则。
+# 此文件放在 knowledge-topics 根目录，作为路径约定的权威声明。
+#
+# 消费方规则：
+#   - 将本 repo clone/pull 到本地后，{kb} = 本 repo 根目录
+#   - 替换时，用实际 clone 路径替换文档中的 {kb} 占位符
+#
+# 示例（在消费方项目里）：
+#   KB_ROOT=~/github-kb/rushwing/knowledge-topics
+#   sed "s|{kb}|${KB_ROOT}|g" "${KB_ROOT}/agent-teams-messaging/REQ-032.md" \
+#     > tasks/features/REQ-032.md
+#
+# 占位符约定：
+#   {kb}          → knowledge-topics 根目录（本文件所在目录）
+#   {kb}/topic/   → 某个话题的子目录
+#   {kb}/topic/X  → 某个话题下的具体文件
+
+kb: "."   # 相对于本文件：knowledge-topics 根目录即为 {kb}
+
+# 话题注册表（消费方可用于枚举可用 topic）
+topics:
+  - id: agent-teams-messaging
+    title: Agent Teams Messaging — Agent 间消息语义协议
+    path: agent-teams-messaging/
+    status: draft
+    entry: agent-teams-messaging/README.md
