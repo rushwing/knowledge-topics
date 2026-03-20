@@ -3,7 +3,7 @@
 跨 Agent Team 共享的结构化知识库。每个话题一个子目录，独立演进，可被任意 Agent 引用。
 
 **GitHub**: [rushwing/knowledge-topics](https://github.com/rushwing/knowledge-topics)  
-**本地消费路径**: `~/github-kb/rushwing/knowledge-topics/`（通过 github-kb skill 同步）
+**本地消费路径**: `~/github-kb/knowledge-topics/`（通过 github-kb skill 同步）
 
 ---
 
