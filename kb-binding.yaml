@@ -26,3 +26,9 @@ topics:
     path: agent-teams-messaging/
     status: draft
     entry: agent-teams-messaging/README.md
+
+  - id: agent-native-tooling
+    title: Agent-Native Tooling — 为 AI Agent 设计工具层的架构模式与 Skill 规范
+    path: agent-native-tooling/
+    status: active
+    entry: agent-native-tooling/README.md
